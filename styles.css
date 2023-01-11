@@ -1,0 +1,286 @@
+/* GENERAL STUFF */
+
+html {
+    line-height: 1.2;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: seashell;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.center {
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+    background-color: white;
+    position: sticky; top: 0;
+}
+
+header .center { 
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    margin: auto;
+    width: 100%;
+}
+
+header .logo {
+    font-family: "Carter One", "Rubik", Arial, Helvetica, sans-serif;
+    color: #53842E;
+}
+
+header nav ul{
+    padding: auto 0;
+    height: 100%;
+    display: flex;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+    
+}
+
+header nav li {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+header nav a {
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: none;
+}
+
+/* MISSION */
+
+#mission-section {
+    height: 36rem;
+    background-image: url("./image/first-background.jpg"); /* credit to: Jordan Arnold*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: multiply;
+    color: seashell;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.mission {
+    display: inline-block;
+    align-content: space-around;
+    align-content: center;
+    height: 70%;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 60rem;
+    padding: 3rem 5rem;
+}
+
+.mission-title {
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px #53842E;
+}
+
+.mission-statement {
+    text-align: left;
+    text-shadow: 2px 2px #644E35;
+    padding: 3rem 0;
+    flex-shrink: 1;
+}
+
+/* MENU */
+
+#menu-section {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem .4rem;
+    
+}
+
+#menu-section .center {
+    
+}
+
+.menu-title {
+    width: 100%;
+    margin: 2rem auto;
+    -webkit-text-decoration: underline dotted #53842E;
+    text-decoration: underline dotted #53842E;
+}
+
+.menu-container {
+    margin: 3rem .1rem;
+    display: flex;
+    grid-template-columns: 4;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 0.1;
+}
+
+.food {
+    border: solid rgb(209, 209, 209) 1px;
+    background-color: white;
+    flex-direction: row;
+    width: 18rem;
+    height: 19rem;
+    margin-bottom: 4rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    box-shadow:
+    -2.5px -2.5px 12px rgba(0, 0, 0, 0.02),
+    -4px -4px 17.2px rgba(0, 0, 0, 0.028),
+    -3.4px -3.4px 20px rgba(0, 0, 0, 0.035),
+    3.1px 3.1px 25px rgba(0, 0, 0, 0.042),
+    29.7px 29.7px 38.8px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.food figure{
+    border: gray solid 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2rem;
+    width: 90%;
+    height: 12rem;
+}
+
+.food figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food .caption {
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.4rem;
+    font-family: "Gloria Hallelujah";
+}
+
+/* TEAM */
+#team-section {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem .4rem;
+    margin-bottom: 4rem;
+    max-width: 64rem;
+    color: white;
+    background-color: black;
+    border-radius: 3rem;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.team-container {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 3;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 0.1;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    width: 15rem;
+    height: 18rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.team-member figure {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.team-det  {
+    width: 100%;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 10rem;
+    color: seashell;
+    background-color: #53842E;
+    padding: 2rem 10%;
+    line-height: 1.8;
+}
+
+footer .copyright {
+    line-height: 2.4;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
